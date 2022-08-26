@@ -1,0 +1,8 @@
+package com.exe.springdi4;
+
+public class MessageMain {
+	public static void main(String[] args) {
+		ServiceConsumer sc = new ServiceConsumer();
+		sc.consumerService();
+	}
+}
