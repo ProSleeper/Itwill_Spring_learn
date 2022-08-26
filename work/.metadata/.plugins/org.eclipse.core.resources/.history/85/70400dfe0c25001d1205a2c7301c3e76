@@ -1,0 +1,33 @@
+package com.exe.springmvc;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller()
+public class TestController {
+	
+//	@RequestMapping(value = "/test/param.action", method = RequestMethod.GET)
+//	public String processGetRequest() {
+//		System.out.println("Get방식 Request");
+//		
+//		return "paramResult";
+//		
+//	}
+//	
+//	@RequestMapping(value = "/test/param.action", method = RequestMethod.POST)
+//	public String processPostRequest() {
+//		System.out.println("Post 방식 Request");
+//		return "paramResult";
+//		
+//	}
+	
+	
+	@RequestMapping(value = "/test/param.action", method = RequestMethod.POST)
+	public String processPostRequest() {
+		System.out.println("Post 방식 Request");
+		return "paramResult";
+		
+	}
+	
+}

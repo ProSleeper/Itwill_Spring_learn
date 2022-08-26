@@ -1,0 +1,13 @@
+package com.exe.springdi4;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MessageMain {
+	public static void main(String[] args) {
+		GenericXmlApplicationContext context = new GenericXmlApplicationContext("app-context.xml");
+		ServiceConsumer ms = (ServiceConsumer)context.getBean("serviceConsumer");
+		
+		ServiceConsumer sc = new ServiceConsumer();
+		sc.consumerService();
+	}
+}

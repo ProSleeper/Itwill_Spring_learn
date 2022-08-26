@@ -1,0 +1,20 @@
+package com.exe.springdi4;
+
+public class ServiceConsumer {
+
+	MessageService ms;
+	
+	public ServiceConsumer(MessageService ms) {
+		super();
+		this.ms = ms;
+	}
+
+	public void consumerService() {
+//		GenericXmlApplicationContext context = new GenericXmlApplicationContext("app-context.xml");
+//		MessageService ms = (MessageService)context.getBean("messageService");
+
+		System.out.println(ms.getMessage());
+	
+	}
+	
+}

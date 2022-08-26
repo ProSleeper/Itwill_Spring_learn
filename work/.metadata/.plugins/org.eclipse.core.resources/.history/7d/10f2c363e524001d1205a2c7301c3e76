@@ -1,0 +1,18 @@
+package com.exe.springdi3;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MessageService {
+
+	public void massageService() {
+		
+		//BeanFaotoy생성
+		GenericXmlApplicationContext conxt = new GenericXmlApplicationContext("app-contenxt.xml");
+	
+		//Bean 획득
+		Message ms  = (Message)context.getbean();
+		
+	
+	}
+	
+}

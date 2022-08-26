@@ -1,0 +1,17 @@
+package com.exe.springdi4;
+
+public class ServiceConsumer {
+
+	
+	//생성자로 의존성 주입
+	MessageService ms;
+	
+	public ServiceConsumer(MessageService ms) {
+		System.out.println(ms.getClass().getName());
+		this.ms = ms;
+	}
+
+	public void consumerService() {
+		System.out.println(ms.getMessage());
+	}
+}
