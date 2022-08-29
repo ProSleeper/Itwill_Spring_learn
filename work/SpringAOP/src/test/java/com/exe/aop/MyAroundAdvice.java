@@ -15,15 +15,15 @@ public class MyAroundAdvice {
 		Object result = null;
 		
 		try {
+//			long longtime = System.currentTimeMillis();
+			
 			System.out.println("메소드 실행 전(Around Before)");
 			result = jointPoint.proceed();
 			System.out.println("메소드 실행 후(Around After)");
-			
+//			System.out.println("종료시간: " + ((System.currentTimeMillis() - longtime) / 1000f) + "초");
 		} catch (Throwable e) {
 			// TODO: handle exception
 		}
-		
 		return result;
 	}
-	
 }
