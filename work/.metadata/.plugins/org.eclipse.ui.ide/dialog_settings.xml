@@ -100,4 +100,6 @@
 		<item value="org.springsource.sts.package:3.9.14.202009151354-RELEASE-e417"/>
 		<item value="org.springsource.sts:3.9.14.202009151354-RELEASE"/>
 	</list>
+	<section name="NewWizardAction">
+	</section>
 </section>

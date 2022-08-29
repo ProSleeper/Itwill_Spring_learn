@@ -1,0 +1,14 @@
+package com.exe.springJdbcTemplate;
+
+import com.exe.springmvc.create;
+import com.exe.springmvc.id;
+
+create table custom
+(id number,
+name char(10),
+age number);
+
+
+public interface temp {
+
+}

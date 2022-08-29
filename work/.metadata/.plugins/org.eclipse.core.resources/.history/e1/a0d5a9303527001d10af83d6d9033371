@@ -1,0 +1,13 @@
+package com.exe.springJdbcTemplate;
+
+
+
+//create table custom
+//(id number,
+//name char(10),
+//age number);
+
+
+public Class CustomDTO {
+
+}
