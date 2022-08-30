@@ -15,11 +15,11 @@ public class AopMain {
 		ta.doAnother1();
 		ta.doAnother2();
 		
-//		TargetB tb = (TargetB)context.getBean("targetB");
-//		
-//		tb.doSomething1();
-//		tb.doSomething2();
-//		tb.doAnother1();
-//		tb.doAnother2();
+		TargetB tb = (TargetB)context.getBean("targetB");
+		
+		tb.doSomething1();
+		tb.doSomething2();
+		tb.doAnother1();
+		tb.doAnother2();
 	}
 }
