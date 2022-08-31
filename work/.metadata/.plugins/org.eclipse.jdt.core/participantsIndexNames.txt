@@ -3,6 +3,8 @@ D:\sts-bundle\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3593981
 \SpringWebMybatis\src\main\java
 D:\sts-bundle\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\238545544.index
 \SpringMVC1\src\main\java
+D:\sts-bundle\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4286265873.index
+\SpringWebView\src\main\java
 D:\sts-bundle\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3876496460.index
 \SpringWeb\src\main\java
 D:\sts-bundle\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1540621625.index
