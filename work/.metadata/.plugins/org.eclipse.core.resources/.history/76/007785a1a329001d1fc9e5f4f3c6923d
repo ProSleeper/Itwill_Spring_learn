@@ -1,0 +1,29 @@
+package com.exe.board.question;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+//Controller -> Service -> Repository
+
+
+@Service
+public class QuestionService {
+
+	
+	private final QuestionRepository questionRepository;
+		
+	
+	public List<Question> getList(){
+		List<Question> lists = questionRepository.findAll();
+	}
+	
+	
+	
+	
+	
+	
+}

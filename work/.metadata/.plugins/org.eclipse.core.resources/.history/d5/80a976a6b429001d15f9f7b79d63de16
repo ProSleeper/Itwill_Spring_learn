@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1 th:text="${question.subject}">제목</h1>
+<div th:text="${question.content}">내용</div>
+<div th:text="${question.createdDate}">날짜</div>
+
+
+<form th:action="@{|answer/create/${question.id}|}" method="post">
+
+	<textarea rows="15" cols="30" name="content" id="content"></textarea>
+
+</form>
+
+</body>
+</html>

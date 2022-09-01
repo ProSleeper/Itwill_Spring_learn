@@ -1,0 +1,16 @@
+package com.exe.board.question;
+
+import org.springframework.stereotype.Service;
+
+
+//Controller -> Service -> Repository
+
+
+@Service
+public class QuestionService {
+
+	
+	
+	
+	
+}

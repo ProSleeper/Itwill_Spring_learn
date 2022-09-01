@@ -1,0 +1,22 @@
+package com.exe.board.answer;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.exe.board.question.QuestionService;
+
+import lombok.RequiredArgsConstructor;
+
+@RequestMapping("/answer")
+@RequiredArgsConstructor
+@Controller
+public class AnswerController {
+	private final QuestionService questionService;
+	private final AnswerService answerService;
+	
+	
+	
+	
+	
+	
+}

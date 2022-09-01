@@ -1,0 +1,23 @@
+package com.exe.board;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class AnswerTest {
+
+	@Autowired
+	private QuestionRepository questionRepository
+	
+	@Autowired
+	private AnswerRepository asnwerRepository;
+	
+	@Test
+	void replySave() {
+		Optional<Question> op = questionRepository.findById(2);
+		assertTrue(op.isPresent())
+	
+	
+	
+	}
+	
+}

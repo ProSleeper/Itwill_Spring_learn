@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<table border="1">
+		<thead>
+			<tr>
+				<th>제목</th>
+				<th>내용</th>
+				<th>작성일시</th>
+			</tr>
+		</thead>
+<tbody>
+<tr th:each="question : ${lists}">
+
+</tr>
+</tbody>
+	</table>
+
+
+
+</body>
+</html>

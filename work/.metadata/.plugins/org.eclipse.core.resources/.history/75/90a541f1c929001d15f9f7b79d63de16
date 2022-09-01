@@ -1,0 +1,48 @@
+package com.exe.board.answer;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+public class test {
+	
+
+
+	
+	public static int[] solution(int[][] v) {
+		int[] answer = new int[2];
+		Set<Integer> set = new HashSet<Integer>();
+		Set<Integer> set2 = new HashSet<Integer>();
+
+
+		for (int[] row : v) {
+
+			checkDupl(set, row[0]);
+			checkDupl(set2, row[1]);
+		}
+		for (Integer integer : set) {
+			answer[0] = integer;
+		}
+		
+		for (Integer integer : set2) {
+			answer[1] = integer;
+		}
+		
+		return answer;
+	}
+
+	static void checkDupl(Set<Integer> set, int value) {
+		if (!set.contains(value)) {
+			set.add(value);
+		}
+		else {
+			set.remove(value);
+		}
+	}
+
+	public static void main(String[] args) {
+		int[][] arr = {{1,4}, {3,4},{3,10}};
+		solution(arr);
+	}
+
+}
