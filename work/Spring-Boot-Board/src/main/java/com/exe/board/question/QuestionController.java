@@ -69,37 +69,12 @@ public class QuestionController {
 		
 		return "redirect:/question/list";
 	}
-	
-	
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@RequestMapping("/")
+	public String home() {
+		return "redirect:/question/list";
+	}
+
 	
 	
 	
