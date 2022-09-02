@@ -1069,3 +1069,2267 @@ java.net.UnknownHostException: spring.io
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:991)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-09-02 09:31:00.753 -----------------------------------------------
+eclipse.buildId=3.9.14.202009151354-RELEASE-e417
+java.version=1.8.0_333
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springsource.sts.ide
+
+!ENTRY org.eclipse.ajdt.ui 4 0 2022-09-02 09:31:44.701
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ajdt.ui [112]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.6.0,4.3.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+       org.eclipse.pde.ui [566]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+              org.eclipse.pde.core [553]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.core; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.3.0,4.3.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+       org.eclipse.ui.cheatsheets [599]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [290]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [289]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.cdt.core.native 4 0 2022-09-02 09:31:44.799
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.core.native [121]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.help.base 4 0 2022-09-02 09:31:45.200
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.base [289]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.help.ui 4 0 2022-09-02 09:31:45.203
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.ui [290]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+       org.eclipse.help.base [289]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.help.webapp 4 0 2022-09-02 09:31:45.218
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.help.webapp [291]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+       org.eclipse.help.base [289]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.j2ee.ejb.annotations.xdoclet 4 0 2022-09-02 09:31:45.222
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.ejb.annotations.xdoclet [362]
+  Unresolved requirement: Require-Bundle: org.eclipse.jdt; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jdt; bundle-version="3.18.500.v20200729-1800"; singleton:="true"
+       org.eclipse.jdt [292]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.j2ee.xdoclet.runtime 4 0 2022-09-02 09:31:45.234
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.j2ee.xdoclet.runtime [371]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.j2ee.ejb.annotations.xdoclet; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.j2ee.ejb.annotations.xdoclet; bundle-version="1.2.300.v201903222024"; singleton:="true"
+       org.eclipse.jst.j2ee.ejb.annotations.xdoclet [362]
+         Unresolved requirement: Require-Bundle: org.eclipse.jdt; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jdt; bundle-version="3.18.500.v20200729-1800"; singleton:="true"
+              org.eclipse.jdt [292]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+                     org.eclipse.ui.cheatsheets [599]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                            org.eclipse.help.ui [290]
+                              Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                                   org.eclipse.help.base [289]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.apache.trinidad.tagsupport 4 0 2022-09-02 09:31:45.235
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.apache.trinidad.tagsupport [376]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [379]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.pagedesigner; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.pagedesigner; bundle-version="1.8.4.v202007170344"; singleton:="true"
+       org.eclipse.jst.pagedesigner [391]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.common.ui 4 0 2022-09-02 09:31:45.242
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.common.ui [379]
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+       org.eclipse.ui.cheatsheets [599]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [290]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [289]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.facelet.ui 4 0 2022-09-02 09:31:45.262
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.facelet.ui [383]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.ui; bundle-version="1.0.1"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.ui; bundle-version="1.6.103.v202003241443"; singleton:="true"
+       org.eclipse.jst.jsf.ui [387]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.1,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+              org.eclipse.jst.jsf.common.ui [379]
+                Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+                     org.eclipse.ui.cheatsheets [599]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                            org.eclipse.help.ui [290]
+                              Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                                -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                                   org.eclipse.help.base [289]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.facesconfig.ui 4 0 2022-09-02 09:31:45.263
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.facesconfig.ui [385]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [379]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.jsf.ui 4 0 2022-09-02 09:31:45.265
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.jsf.ui [387]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.1,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [379]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.pagedesigner 4 0 2022-09-02 09:31:45.265
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.pagedesigner [391]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [379]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.jst.pagedesigner.jsf.ui 4 0 2022-09-02 09:31:45.266
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.jst.pagedesigner.jsf.ui [392]
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+       org.eclipse.jst.jsf.common.ui [379]
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.jst.pagedesigner; bundle-version="[1.1.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.jst.pagedesigner; bundle-version="1.8.4.v202007170344"; singleton:="true"
+       org.eclipse.jst.pagedesigner [391]
+         Unresolved requirement: Require-Bundle: org.eclipse.jst.jsf.common.ui; bundle-version="[1.0.0,2.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.jst.jsf.common.ui; bundle-version="1.5.102.v202007170344"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.api.tools 4 0 2022-09-02 09:31:45.291
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.api.tools [549]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.102,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+       org.eclipse.pde.core [553]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.api.tools.ui 4 0 2022-09-02 09:31:45.298
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.api.tools.ui [551]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+       org.eclipse.pde.ui [566]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+              org.eclipse.pde.core [553]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.9.0.v20200812-1037"; singleton:="true"
+              org.eclipse.pde.launching [562]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.api.tools; bundle-version="1.0.600"
+    -> Bundle-SymbolicName: org.eclipse.pde.api.tools; bundle-version="1.2.0.v20200813-0522"; singleton:="true"
+       org.eclipse.pde.api.tools [549]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.102,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.core 4 0 2022-09-02 09:31:45.300
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.core [553]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ds.annotations 4 0 2022-09-02 09:31:45.302
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.annotations [555]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.8.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+       org.eclipse.pde.ui [566]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+              org.eclipse.pde.core [553]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.9.0.v20200812-1037"; singleton:="true"
+              org.eclipse.pde.launching [562]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ds.core; bundle-version="[1.1.0,1.3.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ds.core; bundle-version="1.2.0.v20200813-0526"; singleton:="true"
+       org.eclipse.pde.ds.core [556]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ds.core 4 0 2022-09-02 09:31:45.305
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.core [556]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+       org.eclipse.pde.core [553]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ds.ui 4 0 2022-09-02 09:31:45.316
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ds.ui [558]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+       org.eclipse.pde.ui [566]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+              org.eclipse.pde.core [553]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ds.core; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ds.core; bundle-version="1.2.0.v20200813-0526"; singleton:="true"
+       org.eclipse.pde.ds.core [556]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.genericeditor.extension 4 0 2022-09-02 09:31:45.316
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.genericeditor.extension [560]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.10.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+       org.eclipse.pde.ui [566]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+              org.eclipse.pde.core [553]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.9.0.v20200812-1037"; singleton:="true"
+              org.eclipse.pde.launching [562]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.launching 4 0 2022-09-02 09:31:45.318
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.launching [562]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+       org.eclipse.pde.core [553]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ua.core 4 0 2022-09-02 09:31:45.321
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ua.core [564]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+       org.eclipse.pde.core [553]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ua.ui 4 0 2022-09-02 09:31:45.326
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ua.ui [565]
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ua.core; bundle-version="[1.0.0,2.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ua.core; bundle-version="1.2.0.v20200813-0518"; singleton:="true"
+       org.eclipse.pde.ua.core [564]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.3.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+              org.eclipse.pde.core [553]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.3.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+       org.eclipse.ui.cheatsheets [599]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [290]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [289]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.4.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+       org.eclipse.pde.ui [566]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.9.0.v20200812-1037"; singleton:="true"
+              org.eclipse.pde.launching [562]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.2.0,4.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.pde.ui 4 0 2022-09-02 09:31:45.353
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.pde.ui [566]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+       org.eclipse.pde.core [553]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.2.0,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+       org.eclipse.ui.cheatsheets [599]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+              org.eclipse.help.ui [290]
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                     org.eclipse.help.base [289]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.pde.launching; bundle-version="[3.6.0,4.0.0)"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.pde.launching; bundle-version="3.9.0.v20200812-1037"; singleton:="true"
+       org.eclipse.pde.launching [562]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.2.0,4.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.local 4 0 2022-09-02 09:31:45.359
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.local [586]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.core; bundle-version="5.6.0"; resolution:="optional"
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.connector.process; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.connector.process; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.connector.process [587]
+         Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+           -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.0.0.202009030027"; version="5.7.0"
+              org.eclipse.cdt.core.native [121]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [592]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+              org.eclipse.tm.terminal.view.core [591]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.0.0.202009030027"; version="5.7.0"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [590]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.process 4 0 2022-09-02 09:31:45.364
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.process [587]
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.spawner; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.spawner; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.0.0.202009030027"; version="5.7.0"
+       org.eclipse.cdt.core.native [121]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Import-Package: org.eclipse.cdt.utils.pty; mandatory:="native"
+    -> Export-Package: org.eclipse.cdt.utils.pty; bundle-symbolic-name="org.eclipse.cdt.core.native"; bundle-version="6.0.0.202009030027"; version="5.7.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.ssh 4 0 2022-09-02 09:31:45.365
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.ssh [588]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [592]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+              org.eclipse.tm.terminal.view.core [591]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [590]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.connector.telnet 4 0 2022-09-02 09:31:45.365
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.telnet [589]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [590]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.core [591]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [592]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.control 4 0 2022-09-02 09:31:45.367
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.control [590]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.view.core 4 0 2022-09-02 09:31:45.368
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.core [591]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.tm.terminal.view.ui 4 0 2022-09-02 09:31:45.370
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.ui [592]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.core; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.core; bundle-version="4.7.0.202008310315"; singleton:="true"
+       org.eclipse.tm.terminal.view.core [591]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [590]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui.cheatsheets 4 0 2022-09-02 09:31:45.373
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.cheatsheets [599]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+       org.eclipse.help.ui [290]
+         Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+              org.eclipse.help.base [289]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui.intro.quicklinks 4 0 2022-09-02 09:31:45.377
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.intro.quicklinks [608]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui.intro.universal 4 0 2022-09-02 09:31:45.401
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.ui.intro.universal [609]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.ui.intro.quicklinks; bundle-version="1.0.0"
+    -> Bundle-SymbolicName: org.eclipse.ui.intro.quicklinks; bundle-version="1.1.0.v20200724-0708"; singleton:="true"
+       org.eclipse.ui.intro.quicklinks [608]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.springframework.ide.eclipse.ajdt.ui.xref 4 0 2022-09-02 09:31:46.104
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.ajdt.ui.xref [802]
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.internal.ui.lazystart
+    -> Export-Package: org.eclipse.ajdt.internal.ui.lazystart; bundle-symbolic-name="org.eclipse.ajdt.ui"; bundle-version="2.2.4.202007241909"; version="0.0.0"; aspect-policy:="opt-in"
+       org.eclipse.ajdt.ui [112]
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.ui; bundle-version="[3.6.0,4.3.0)"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.pde.ui; bundle-version="3.12.0.v20200824-1258"; singleton:="true"
+              org.eclipse.pde.ui [566]
+                Unresolved requirement: Require-Bundle: org.eclipse.pde.core; bundle-version="[3.13.0,4.0.0)"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+                     org.eclipse.pde.core [553]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.pde.core; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.pde.core; bundle-version="3.14.0.v20200817-1143"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.ui.cheatsheets; bundle-version="[3.3.0,4.3.0)"
+           -> Bundle-SymbolicName: org.eclipse.ui.cheatsheets; bundle-version="3.7.0.v20200805-2057"; singleton:="true"
+              org.eclipse.ui.cheatsheets [599]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.ui; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.ui; bundle-version="4.2.0.v20200724-0708"; singleton:="true"
+                     org.eclipse.help.ui [290]
+                       Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; visibility:="reexport"
+                         -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+                            org.eclipse.help.base [289]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.help.base; bundle-version="[4.0.0,5.0.0)"; resolution:="optional"
+                  -> Bundle-SymbolicName: org.eclipse.help.base; bundle-version="4.3.0.v20200902-1800"; singleton:="true"
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.internal.utils
+    -> Export-Package: org.eclipse.ajdt.internal.utils; bundle-symbolic-name="org.eclipse.ajdt.ui"; bundle-version="2.2.4.202007241909"; version="0.0.0"; aspect-policy:="opt-in"
+  Unresolved requirement: Import-Package: org.eclipse.ajdt.internal.ui.editor
+    -> Export-Package: org.eclipse.ajdt.internal.ui.editor; bundle-symbolic-name="org.eclipse.ajdt.ui"; bundle-version="2.2.4.202007241909"; version="0.0.0"; aspect-policy:="opt-in"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1845)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1838)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1779)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1743)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1665)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.bindings' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.enclosing'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.enclosing'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.next'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.next'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.previous'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.previous'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.last'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.select.last'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.source.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.source.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.add.import'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.organize.imports'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.refactor.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.refactor.quickMenu'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.rename.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.rename.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.move.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.move.element'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.modify.method.parameters'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.modify.method.parameters'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.inline'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.inline'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.method'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.method'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.local.variable'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.extract.local.variable'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.edit.text.java.open.hierarchy'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.TypeHierarchy'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.TypeHierarchy'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.PackageExplorer'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.PackageExplorer'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.SourceView'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.SourceView'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.JavadocView'
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-09-02 09:35:55.539
+!MESSAGE Cannot bind to an undefined command: plug-in='org.eclipse.wst.jsdt.ui', id='org.eclipse.wst.jsdt.ui.JavadocView'
+
+!ENTRY org.eclipse.jface 2 0 2022-09-02 09:35:59.235
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-09-02 09:35:59.235
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d982fbe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3adb4cc8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-09-02 09:36:36.848
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ITWILL'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.osgi 2 0 2022-09-02 09:36:47.300
+!MESSAGE While loading class "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer", thread "Thread[Worker-3: Decoration Calculation,5,main]" timed out waiting (10249ms) for thread "null" to finish starting bundle "org.eclipse.m2e.jdt_1.16.0.20200610-1500 [462]". To avoid deadlock, thread "Thread[Worker-3: Decoration Calculation,5,main]" is proceeding but "org.eclipse.m2e.jdt.internal.MavenClasspathContainerInitializer" may not be fully initialized.
+!STACK 0
+org.osgi.framework.BundleException: Unable to acquire the state change lock for the module: osgi.identity; type="osgi.bundle"; version:Version="1.16.0.20200610-1500"; osgi.identity="org.eclipse.m2e.jdt"; singleton:="true" [id=462] STARTED [STARTED]
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:350)
+	at org.eclipse.osgi.container.Module.start(Module.java:419)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:506)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:616)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3799)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3775)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3752)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3196)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.isOnClasspath(JavaProject.java:2731)
+	at org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.getOverlay(BuildpathIndicatorLabelDecorator.java:49)
+	at org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.decorate(BuildpathIndicatorLabelDecorator.java:35)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:251)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.util.concurrent.TimeoutException: Timeout after waiting 10 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:347)
+	... 37 more
+Caused by: org.eclipse.osgi.framework.util.ThreadInfoReport: Thread dump
+
+ThreadId: 61 ThreadName: Provisioning Event Dispatcher ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@6132c294 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 58 ThreadName: pool-4-thread-1 ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@8569f71 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 57 ThreadName: pool-3-thread-1 ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@26b56e3c LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 54 ThreadName: Worker-14 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 53 ThreadName: Worker-13 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 52 ThreadName: Worker-12 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 51 ThreadName: Worker-11 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 50 ThreadName: Worker-10 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 49 ThreadName: Worker-9 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 48 ThreadName: Worker-8 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 47 ThreadName: Worker-7 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 46 ThreadName: Worker-6 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 45 ThreadName: Worker-5 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 44 ThreadName: Worker-4 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 42 ThreadName: Worker-3: Decoration Calculation ThreadState: RUNNABLE
+  Blocked On: org.eclipse.osgi.internal.container.EquinoxReentrantLock@5f400990[Locked by thread Worker-1: Initializing Java Tooling]
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.management.ThreadImpl.dumpThreads0(Native Method)
+    sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+    org.eclipse.osgi.framework.util.ThreadInfoReport.getThreadDump(ThreadInfoReport.java:30)
+    org.eclipse.osgi.framework.util.ThreadInfoReport.<init>(ThreadInfoReport.java:23)
+    org.eclipse.osgi.container.Module.lockStateChange(Module.java:347)
+    org.eclipse.osgi.container.Module.start(Module.java:419)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:506)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+    java.lang.ClassLoader.loadClass(Unknown Source)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:616)
+    org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+    org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+    org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+    org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+    org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3799)
+    org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3775)
+    org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+    org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+    org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+    org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+    org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+    org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+    org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3752)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3196)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+    org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+    org.eclipse.jdt.internal.core.JavaProject.isOnClasspath(JavaProject.java:2731)
+    org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.getOverlay(BuildpathIndicatorLabelDecorator.java:49)
+    org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.decorate(BuildpathIndicatorLabelDecorator.java:35)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:251)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+    org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+    org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ThreadId: 41 ThreadName: Worker-2 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 40 ThreadName: Worker-1: Initializing Java Tooling ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+    java.io.File.isFile(Unknown Source)
+    org.eclipse.jdt.launching.JavaRuntime.getLibraryLocations(JavaRuntime.java:2151)
+    org.eclipse.jdt.internal.launching.JREContainer.computeClasspathEntries(JREContainer.java:301)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:282)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:400)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3202)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+    org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+    org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:4569)
+    org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:39)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ThreadId: 39 ThreadName: EventAdmin Async Event Dispatcher Thread ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@e37a439 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 36 ThreadName: org.eclipse.jdt.internal.ui.text.JavaReconciler ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.jface.text.reconciler.DirtyRegionQueue@32261f99 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+
+ThreadId: 32 ThreadName: Java indexing ThreadState: WAITING
+  Blocked On: org.eclipse.jdt.internal.core.search.indexing.IndexManager@3fef436f LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 30 ThreadName: Git Repository Closer ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@71382a06 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+
+ThreadId: 29 ThreadName: EMF Reference Cleaner ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@429d5e74 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+
+ThreadId: 27 ThreadName: Worker-0 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 24 ThreadName: Worker-JM ThreadState: WAITING
+  Blocked On: java.util.ArrayList@40c54b69 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+
+ThreadId: 21 ThreadName: Gogo shell ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5f48c25 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 18 ThreadName: Thread-2 ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@352cee87 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.ArrayBlockingQueue.take(Unknown Source)
+    org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 16 ThreadName: SCR Component Actor ThreadState: WAITING
+  Blocked On: java.util.LinkedList@1d6a78a8 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 15 ThreadName: Start Level: Equinox Container: b425390e-1703-4d8b-bf74-9b2adcc9ec7a ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@779ee66f LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 14 ThreadName: Framework Event Dispatcher: Equinox Container: b425390e-1703-4d8b-bf74-9b2adcc9ec7a ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@562ad91d LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 13 ThreadName: Bundle File Closer ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@4205d89 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 11 ThreadName: Active Thread: Equinox Container: b425390e-1703-4d8b-bf74-9b2adcc9ec7a ThreadState: TIMED_WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4ac1ca9d LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+    java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+    java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 5 ThreadName: Attach Listener ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+
+ThreadId: 4 ThreadName: Signal Dispatcher ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+
+ThreadId: 3 ThreadName: Finalizer ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@4aecf034 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+ThreadId: 2 ThreadName: Reference Handler ThreadState: WAITING
+  Blocked On: java.lang.ref.Reference$Lock@4a0e3a45 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    java.lang.ref.Reference.tryHandlePending(Unknown Source)
+    java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+ThreadId: 1 ThreadName: main ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+    java.io.File.isFile(Unknown Source)
+    org.eclipse.jdt.launching.JavaRuntime.getLibraryLocations(JavaRuntime.java:2151)
+    org.eclipse.jdt.internal.launching.JREContainer.computeClasspathEntries(JREContainer.java:301)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:282)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:400)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3202)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+    org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+    org.eclipse.jdt.internal.core.DynamicProjectReferences.getDependentProjects(DynamicProjectReferences.java:37)
+    org.eclipse.core.internal.resources.ProjectDescription.computeDynamicReferencesForProject(ProjectDescription.java:951)
+    org.eclipse.core.internal.resources.ProjectDescription.getAllBuildConfigReferences(ProjectDescription.java:266)
+    org.eclipse.core.internal.resources.ProjectDescription.getAllReferences(ProjectDescription.java:223)
+    org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:463)
+    org.eclipse.ui.actions.CloseUnrelatedProjectsAction.buildConnectedComponents(CloseUnrelatedProjectsAction.java:82)
+    org.eclipse.ui.actions.CloseUnrelatedProjectsAction.computeRelated(CloseUnrelatedProjectsAction.java:205)
+    org.eclipse.ui.actions.CloseUnrelatedProjectsAction.getSelectedResources(CloseUnrelatedProjectsAction.java:225)
+    org.eclipse.ui.actions.SelectionListenerAction.selectionIsOfType(SelectionListenerAction.java:242)
+    org.eclipse.ui.actions.CloseResourceAction.updateSelection(CloseResourceAction.java:231)
+    org.eclipse.ui.actions.BaseSelectionListenerAction.selectionChanged(BaseSelectionListenerAction.java:128)
+    org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider.updateActionBars(ResourceMgmtActionProvider.java:280)
+    org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider.fillActionBars(ResourceMgmtActionProvider.java:92)
+    org.eclipse.ui.navigator.NavigatorActionService$3.run(NavigatorActionService.java:268)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.ui.navigator.NavigatorActionService.fillActionBars(NavigatorActionService.java:261)
+    org.eclipse.ui.navigator.CommonNavigatorManager.selectionChanged(CommonNavigatorManager.java:220)
+    org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.ui.internal.JFaceUtil$$Lambda$27/444096469.run(Unknown Source)
+    org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+    org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+    org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2132)
+    org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1178)
+    org.eclipse.ui.navigator.CommonViewer.handleSelect(CommonViewer.java:466)
+    org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1207)
+    org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:242)
+    org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:237)
+    org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:402)
+    org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+    org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+    org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+    org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+    org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+    org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+    org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+    org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+    org.eclipse.ui.internal.Workbench$$Lambda$129/1242705512.run(Unknown Source)
+    org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+    org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+    org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+    org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+    org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+    org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+    org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+    org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+    org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+    sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    java.lang.reflect.Method.invoke(Unknown Source)
+    org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+    org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+    org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	... 38 more
+Root exception:
+java.util.concurrent.TimeoutException: Timeout after waiting 10 seconds to acquire the lock.
+	at org.eclipse.osgi.container.Module.lockStateChange(Module.java:347)
+	at org.eclipse.osgi.container.Module.start(Module.java:419)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:506)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:616)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3799)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3775)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+	at org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+	at org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+	at org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3752)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3196)
+	at org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+	at org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+	at org.eclipse.jdt.internal.core.JavaProject.isOnClasspath(JavaProject.java:2731)
+	at org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.getOverlay(BuildpathIndicatorLabelDecorator.java:49)
+	at org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.decorate(BuildpathIndicatorLabelDecorator.java:35)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:251)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.osgi.framework.util.ThreadInfoReport: Thread dump
+
+ThreadId: 61 ThreadName: Provisioning Event Dispatcher ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@6132c294 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 58 ThreadName: pool-4-thread-1 ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@8569f71 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 57 ThreadName: pool-3-thread-1 ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@26b56e3c LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 54 ThreadName: Worker-14 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 53 ThreadName: Worker-13 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 52 ThreadName: Worker-12 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 51 ThreadName: Worker-11 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 50 ThreadName: Worker-10 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 49 ThreadName: Worker-9 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 48 ThreadName: Worker-8 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 47 ThreadName: Worker-7 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 46 ThreadName: Worker-6 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 45 ThreadName: Worker-5 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 44 ThreadName: Worker-4 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 42 ThreadName: Worker-3: Decoration Calculation ThreadState: RUNNABLE
+  Blocked On: org.eclipse.osgi.internal.container.EquinoxReentrantLock@5f400990[Locked by thread Worker-1: Initializing Java Tooling]
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.management.ThreadImpl.dumpThreads0(Native Method)
+    sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+    org.eclipse.osgi.framework.util.ThreadInfoReport.getThreadDump(ThreadInfoReport.java:30)
+    org.eclipse.osgi.framework.util.ThreadInfoReport.<init>(ThreadInfoReport.java:23)
+    org.eclipse.osgi.container.Module.lockStateChange(Module.java:347)
+    org.eclipse.osgi.container.Module.start(Module.java:419)
+    org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:506)
+    org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+    org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:572)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:346)
+    org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:398)
+    org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:477)
+    org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:171)
+    java.lang.ClassLoader.loadClass(Unknown Source)
+    org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:616)
+    org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:196)
+    org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:923)
+    org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+    org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+    org.eclipse.jdt.core.JavaCore.computeClasspathContainerInitializer(JavaCore.java:3799)
+    org.eclipse.jdt.core.JavaCore.getClasspathContainerInitializer(JavaCore.java:3775)
+    org.eclipse.jdt.internal.core.JavaModelManager.initializeContainer(JavaModelManager.java:3176)
+    org.eclipse.jdt.internal.core.JavaModelManager$10.run(JavaModelManager.java:3079)
+    org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+    org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+    org.eclipse.jdt.internal.core.JavaModelManager.initializeAllContainers(JavaModelManager.java:3141)
+    org.eclipse.jdt.internal.core.JavaModelManager.getClasspathContainer(JavaModelManager.java:2111)
+    org.eclipse.jdt.core.JavaCore.getClasspathContainer(JavaCore.java:3752)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3196)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+    org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+    org.eclipse.jdt.internal.core.JavaProject.isOnClasspath(JavaProject.java:2731)
+    org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.getOverlay(BuildpathIndicatorLabelDecorator.java:49)
+    org.eclipse.jdt.internal.ui.BuildpathIndicatorLabelDecorator.decorate(BuildpathIndicatorLabelDecorator.java:35)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:251)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+    org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+    org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+    org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ThreadId: 41 ThreadName: Worker-2 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 40 ThreadName: Worker-1: Initializing Java Tooling ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+    java.io.File.isFile(Unknown Source)
+    org.eclipse.jdt.launching.JavaRuntime.getLibraryLocations(JavaRuntime.java:2151)
+    org.eclipse.jdt.internal.launching.JREContainer.computeClasspathEntries(JREContainer.java:301)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:282)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:400)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3202)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+    org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+    org.eclipse.jdt.core.JavaCore.initializeAfterLoad(JavaCore.java:4569)
+    org.eclipse.jdt.internal.ui.InitializeAfterLoadJob$RealJob.run(InitializeAfterLoadJob.java:39)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+ThreadId: 39 ThreadName: EventAdmin Async Event Dispatcher Thread ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@e37a439 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 36 ThreadName: org.eclipse.jdt.internal.ui.text.JavaReconciler ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.jface.text.reconciler.DirtyRegionQueue@32261f99 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:183)
+
+ThreadId: 32 ThreadName: Java indexing ThreadState: WAITING
+  Blocked On: org.eclipse.jdt.internal.core.search.indexing.IndexManager@3fef436f LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:378)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 30 ThreadName: Git Repository Closer ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@71382a06 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    org.eclipse.egit.core.RepositoryCache$Closer.run(RepositoryCache.java:463)
+
+ThreadId: 29 ThreadName: EMF Reference Cleaner ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@429d5e74 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    org.eclipse.emf.common.util.CommonUtil$1ReferenceClearingQueuePollingThread.run(CommonUtil.java:70)
+
+ThreadId: 27 ThreadName: Worker-0 ThreadState: TIMED_WAITING
+  Blocked On: org.eclipse.core.internal.jobs.WorkerPool@79e6fff3 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.WorkerPool.sleep(WorkerPool.java:200)
+    org.eclipse.core.internal.jobs.WorkerPool.startJob(WorkerPool.java:242)
+    org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+ThreadId: 24 ThreadName: Worker-JM ThreadState: WAITING
+  Blocked On: java.util.ArrayList@40c54b69 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    org.eclipse.core.internal.jobs.InternalWorker.run(InternalWorker.java:61)
+
+ThreadId: 21 ThreadName: Gogo shell ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@5f48c25 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 18 ThreadName: Thread-2 ThreadState: WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@352cee87 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.park(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+    java.util.concurrent.ArrayBlockingQueue.take(Unknown Source)
+    org.eclipse.equinox.weaving.internal.caching.CacheWriter$1.run(CacheWriter.java:50)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 16 ThreadName: SCR Component Actor ThreadState: WAITING
+  Blocked On: java.util.LinkedList@1d6a78a8 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.apache.felix.scr.impl.ComponentActorThread.run(ComponentActorThread.java:83)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 15 ThreadName: Start Level: Equinox Container: b425390e-1703-4d8b-bf74-9b2adcc9ec7a ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@779ee66f LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 14 ThreadName: Framework Event Dispatcher: Equinox Container: b425390e-1703-4d8b-bf74-9b2adcc9ec7a ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@562ad91d LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 13 ThreadName: Bundle File Closer ThreadState: WAITING
+  Blocked On: org.eclipse.osgi.framework.eventmgr.EventManager$EventThread@4205d89 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.getNextEvent(EventManager.java:400)
+    org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:341)
+
+ThreadId: 11 ThreadName: Active Thread: Equinox Container: b425390e-1703-4d8b-bf74-9b2adcc9ec7a ThreadState: TIMED_WAITING
+  Blocked On: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4ac1ca9d LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    sun.misc.Unsafe.park(Native Method)
+    java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+    java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+    java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+    java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+    java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+    java.lang.Thread.run(Unknown Source)
+
+ThreadId: 5 ThreadName: Attach Listener ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+
+ThreadId: 4 ThreadName: Signal Dispatcher ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+
+ThreadId: 3 ThreadName: Finalizer ThreadState: WAITING
+  Blocked On: java.lang.ref.ReferenceQueue$Lock@4aecf034 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.ReferenceQueue.remove(Unknown Source)
+    java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+ThreadId: 2 ThreadName: Reference Handler ThreadState: WAITING
+  Blocked On: java.lang.ref.Reference$Lock@4a0e3a45 LockOwnerId: -1 LockOwnerName: null
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.lang.Object.wait(Native Method)
+    java.lang.Object.wait(Unknown Source)
+    java.lang.ref.Reference.tryHandlePending(Unknown Source)
+    java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+ThreadId: 1 ThreadName: main ThreadState: RUNNABLE
+  Blocked On: none
+  Synchronizers Locked: none
+  Monitors Locked: none
+  Stack Trace: 
+    java.io.WinNTFileSystem.getBooleanAttributes(Native Method)
+    java.io.File.isFile(Unknown Source)
+    org.eclipse.jdt.launching.JavaRuntime.getLibraryLocations(JavaRuntime.java:2151)
+    org.eclipse.jdt.internal.launching.JREContainer.computeClasspathEntries(JREContainer.java:301)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:282)
+    org.eclipse.jdt.internal.launching.JREContainer.getClasspathEntries(JREContainer.java:400)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3202)
+    org.eclipse.jdt.internal.core.JavaProject.resolveClasspath(JavaProject.java:3360)
+    org.eclipse.jdt.internal.core.JavaProject.getResolvedClasspath(JavaProject.java:2444)
+    org.eclipse.jdt.internal.core.DynamicProjectReferences.getDependentProjects(DynamicProjectReferences.java:37)
+    org.eclipse.core.internal.resources.ProjectDescription.computeDynamicReferencesForProject(ProjectDescription.java:951)
+    org.eclipse.core.internal.resources.ProjectDescription.getAllBuildConfigReferences(ProjectDescription.java:266)
+    org.eclipse.core.internal.resources.ProjectDescription.getAllReferences(ProjectDescription.java:223)
+    org.eclipse.core.internal.resources.Project.getReferencedProjects(Project.java:463)
+    org.eclipse.ui.actions.CloseUnrelatedProjectsAction.buildConnectedComponents(CloseUnrelatedProjectsAction.java:82)
+    org.eclipse.ui.actions.CloseUnrelatedProjectsAction.computeRelated(CloseUnrelatedProjectsAction.java:205)
+    org.eclipse.ui.actions.CloseUnrelatedProjectsAction.getSelectedResources(CloseUnrelatedProjectsAction.java:225)
+    org.eclipse.ui.actions.SelectionListenerAction.selectionIsOfType(SelectionListenerAction.java:242)
+    org.eclipse.ui.actions.CloseResourceAction.updateSelection(CloseResourceAction.java:231)
+    org.eclipse.ui.actions.BaseSelectionListenerAction.selectionChanged(BaseSelectionListenerAction.java:128)
+    org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider.updateActionBars(ResourceMgmtActionProvider.java:280)
+    org.eclipse.ui.internal.navigator.resources.actions.ResourceMgmtActionProvider.fillActionBars(ResourceMgmtActionProvider.java:92)
+    org.eclipse.ui.navigator.NavigatorActionService$3.run(NavigatorActionService.java:268)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.ui.navigator.NavigatorActionService.fillActionBars(NavigatorActionService.java:261)
+    org.eclipse.ui.navigator.CommonNavigatorManager.selectionChanged(CommonNavigatorManager.java:220)
+    org.eclipse.jface.viewers.Viewer$1.run(Viewer.java:151)
+    org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+    org.eclipse.ui.internal.JFaceUtil$$Lambda$27/444096469.run(Unknown Source)
+    org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:174)
+    org.eclipse.jface.viewers.Viewer.fireSelectionChanged(Viewer.java:148)
+    org.eclipse.jface.viewers.StructuredViewer.updateSelection(StructuredViewer.java:2132)
+    org.eclipse.jface.viewers.StructuredViewer.handleSelect(StructuredViewer.java:1178)
+    org.eclipse.ui.navigator.CommonViewer.handleSelect(CommonViewer.java:466)
+    org.eclipse.jface.viewers.StructuredViewer$4.widgetSelected(StructuredViewer.java:1207)
+    org.eclipse.jface.util.OpenStrategy.fireSelectionEvent(OpenStrategy.java:242)
+    org.eclipse.jface.util.OpenStrategy.access$4(OpenStrategy.java:237)
+    org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:402)
+    org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+    org.eclipse.swt.widgets.Display.sendEvent(Display.java:4195)
+    org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1037)
+    org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4012)
+    org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3612)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+    org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+    org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+    org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+    org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+    org.eclipse.ui.internal.Workbench$$Lambda$129/1242705512.run(Unknown Source)
+    org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+    org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+    org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:153)
+    org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:150)
+    org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+    org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+    org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+    org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+    org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+    sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+    sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+    java.lang.reflect.Method.invoke(Unknown Source)
+    org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+    org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+    org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	... 38 more
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2022-09-02 09:37:25.806
+!MESSAGE Error occured processing 'com.exe.board.SpringBootBoardApplication'
+!STACK 0
+org.springframework.core.annotation.AnnotationConfigurationException: Attribute 'proxyBeanMethods' in annotation [org.springframework.boot.SpringBootConfiguration] is declared as an @AliasFor nonexistent attribute 'proxyBeanMethods' in annotation [org.springframework.context.annotation.Configuration].; nested exception is java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2128)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.from(AnnotationUtils.java:2095)
+	at org.springframework.core.annotation.AnnotationUtils.getAttributeAliasNames(AnnotationUtils.java:1751)
+	at org.springframework.core.annotation.AnnotationUtils.isSynthesizable(AnnotationUtils.java:1710)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotation(AnnotationUtils.java:1493)
+	at org.springframework.core.annotation.AnnotationUtils.synthesizeAnnotationArray(AnnotationUtils.java:1597)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotations(AnnotationUtils.java:231)
+	at org.springframework.core.type.classreading.AnnotationAttributesReadingVisitor.visitEnd(AnnotationAttributesReadingVisitor.java:76)
+	at org.springframework.asm.ClassReader.readAnnotationValues(ClassReader.java:2020)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:676)
+	at org.springframework.asm.ClassReader.accept(ClassReader.java:527)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtConnectedMetadataReader.<init>(JdtConnectedMetadataReader.java:45)
+	at org.springframework.ide.eclipse.core.java.classreading.JdtMetadataReaderFactory.getMetadataReader(JdtMetadataReaderFactory.java:53)
+	at org.springframework.ide.eclipse.core.java.classreading.CachingJdtMetadataReaderFactory.getMetadataReader(CachingJdtMetadataReaderFactory.java:38)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig.registerBean(BeansJavaConfig.java:368)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:229)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansJavaConfig$2.call(BeansJavaConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NoSuchMethodException: org.springframework.context.annotation.Configuration.proxyBeanMethods()
+	at java.lang.Class.getDeclaredMethod(Unknown Source)
+	at org.springframework.core.annotation.AnnotationUtils$AliasDescriptor.<init>(AnnotationUtils.java:2121)
+	... 22 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:34.120
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:34.132
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:36.732
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:36.734
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:36.981
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:36.984
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:38.358
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-09-02 09:37:38.360
+!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
