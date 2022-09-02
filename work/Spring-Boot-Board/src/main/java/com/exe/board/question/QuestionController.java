@@ -1,14 +1,19 @@
 package com.exe.board.question;
 
-import java.util.List;
+import javax.validation.Valid;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+
+import com.exe.board.answer.AnswerForm;
 
 import lombok.RequiredArgsConstructor;
 
@@ -23,18 +28,21 @@ public class QuestionController {
 //	private final QuestionRepository questionRepository;
 	private final QuestionService questionService;
 
+	
+	
 	@RequestMapping("/list")
-	public String list(Model model) {
-
-		List<Question> lists = questionService.getList();
-
-		model.addAttribute("lists", lists);
+	public String list(Model model, @PageableDefault Pageable pageable) {
+		System.out.println("여기 오니?");
+		Page<Question> paging = questionService.getList(pageable);
+		
+		model.addAttribute("lists", paging);
+		model.addAttribute("paging", paging);
 
 		return "question_list";
 	}
 
 	@RequestMapping("/detail/{id}")
-	public String detail(Model model, @PathVariable("id") Integer id) {
+	public String detail(Model model, @PathVariable("id") Integer id, AnswerForm answerForm) {
 		
 		Question question = questionService.getQuestion(id);
 		model.addAttribute("question", question);
@@ -43,30 +51,26 @@ public class QuestionController {
 	}
 	
 	@GetMapping("/create")
-	public String questionCreate() {
+	public String questionCreate(QuestionForm questionForm) {
 		
 		
 		
 		return "question_form";
 	}
 	
-	@PostMapping("/create")
-	public String questionCreate(String subject, @RequestParam String content) {
+	@PostMapping("/create") //매개변수의 순서가 중요 valid부터 꼭 써주고 그 뒤로 bindingresult
+	public String questionCreate(@Valid QuestionForm questionForm, BindingResult bindingResult) {
 		
-		System.out.println("안옴");
+		if(bindingResult.hasErrors()) {
+			return "question_form";
+		}
 		
-		questionService.create(subject, content);
+		questionService.create(questionForm.getSubject(), questionForm.getContent());
 		
 		return "redirect:/question/list";
 	}
 	
 	
-	
-
-	@RequestMapping("/")
-	public String home() {
-		return "redirect:/question/list";
-	}
 
 	
 	

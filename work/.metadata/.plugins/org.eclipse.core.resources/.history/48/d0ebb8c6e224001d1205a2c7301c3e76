@@ -1,5 +1,0 @@
-package com.exe.springdi1;
-
-public class Message {
-	System.out.println(name + "님 반갑습니다.");
-}

@@ -9,13 +9,21 @@ import org.springframework.web.bind.annotation.RestController;
 //@RestController = @Controller + @ResponseBody
 @Controller
 public class HelloController {
-
 	
 	@RequestMapping("/hello")
 	@ResponseBody
 	public String hello() {
 		
-		String result = "{\"result\":\"Hello SpringBoot refresh\"}";
+		String result = "{\"result\":\"Hello SpringBoot nate\"}";
+		
+		return result;
+	}
+	
+	@RequestMapping("/bye")
+	@ResponseBody
+	public String bye() {
+		
+		String result = "{\"result\":\"Hello SpringBoot bye\"}";
 		
 		return result;
 	}

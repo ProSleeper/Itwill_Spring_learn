@@ -5,8 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
-
-
 @Controller
 public class MainController {
 	
@@ -15,8 +13,9 @@ public class MainController {
 	public String hello() {
 		return "메인 페이지";
 	}
+	
+	@RequestMapping("/")
+	public String home() {
+		return "redirect:/question/list";
+	}
 }
-
-
-
-

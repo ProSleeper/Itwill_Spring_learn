@@ -12,6 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.exe.board.question.Question;
 import com.exe.board.question.QuestionRepository;
+import com.exe.board.question.QuestionService;
 
 @SpringBootTest
 class SpringBootBoardApplicationTests {
@@ -19,15 +20,15 @@ class SpringBootBoardApplicationTests {
 	@Autowired
 	private QuestionRepository questionRepository;
 	
-	@Test
-	void contextLoads() {
-	}
-
 //	@Test
-	void save() {
-		Question q1 = new Question();
-		q1.setSubject("스프링부트는 먹는건가요?");
-		q1.setContent("스프링이 먹고 싶어요.");
+//	void contextLoads() {
+//	}
+//
+////	@Test
+//	void save() {
+//		Question q1 = new Question();
+//		q1.setSubject("스프링부트는 먹는건가요?");
+//		q1.setContent("스프링이 먹고 싶어요.");
 //		q1.setCreatedDate(LocalDateTime.now());
 //		
 //		this.questionRepository.save(q1);
@@ -39,7 +40,7 @@ class SpringBootBoardApplicationTests {
 //		q2.setCreatedDate(LocalDateTime.now());
 //		
 //		this.questionRepository.save(q2);
-	}
+//	}
 	
 //	
 //	@Test
@@ -107,8 +108,19 @@ class SpringBootBoardApplicationTests {
 //		
 //		
 //	}
-//	
+
+	@Autowired
+	private QuestionService questionService;
 	
+	@Test
+	void save200() {
+		for (int i = 0; i < 200; i++) {
+			String subject = String.format("테스트 데이터 입니다:[%03d]", i + 1);
+			String content = String.format("스프링부트는 재미있:[%03d]", i + 1);
+			
+			questionService.create(subject, content);
+		}
+	}
 	
 	
 	
