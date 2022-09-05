@@ -1,11 +1,13 @@
 package com.exe.board;
 
+import java.util.Date;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
+@RequestMapping("/api")
 //@RestController = @Controller + @ResponseBody
 @Controller
 public class HelloController {
@@ -16,7 +18,7 @@ public class HelloController {
 		
 		String result = "{\"result\":\"Hello SpringBoot nate\"}";
 		
-		return result;
+		return "안녕하세요. 현재 서버시간은 "+new Date() +"입니다. \n";
 	}
 	
 	@RequestMapping("/bye")
@@ -27,4 +29,5 @@ public class HelloController {
 		
 		return result;
 	}
+	
 }

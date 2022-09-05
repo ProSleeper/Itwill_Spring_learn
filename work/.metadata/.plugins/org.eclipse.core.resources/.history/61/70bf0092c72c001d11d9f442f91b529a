@@ -1,0 +1,30 @@
+package com.exe.board.user;
+
+import java.util.Optional;
+
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class UserSecurityService implements UserDetailsService{
+
+	private final UserRepository userRepository;
+	
+	//사용자명으로 비밀번호를 조회해서 리턴하는 메서드
+	@Override
+	public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException {
+		//사용자명으로 SiteUser 객체를 조회
+		Optional<SiteUser> searchUser = userRepository.findByUserName(userName);
+		
+		
+		return null;
+	}
+
+	
+	
+}

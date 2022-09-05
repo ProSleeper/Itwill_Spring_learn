@@ -1,9 +1,0 @@
-package com.exe.aop;
-
-public class MyAfterThrowingAdvice {
-	
-	
-	public void afterThrowAdvice() {
-		System.out.println("Throw");
-	}
-}

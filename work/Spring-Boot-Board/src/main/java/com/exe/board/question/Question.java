@@ -10,9 +10,11 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 import com.exe.board.answer.Answer;
+import com.exe.board.user.SiteUser;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -36,6 +38,11 @@ public class Question {
 																	//트랜잭션을 유지하게 하는 방법
 	@OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE/* , fetch = FetchType.EAGER */)
 	private List<Answer> answerList;
+	
+	@ManyToOne
+	private SiteUser author;
+	
+	private LocalDateTime modifyDate;
 }
 
 

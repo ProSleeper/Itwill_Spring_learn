@@ -1,0 +1,28 @@
+<html layout:decorate:"~{layout}">
+
+<meta charset="UTF-8">
+
+<div layout:fragment="content" class="contaniner my-3">
+	<div class = "my3 border-bottom">
+	<div>
+		<h4>회원가입</h4>
+	</div>
+	</div>
+
+<form th:action="@{/user/signup" th:object="${userCreateForm}" method="post">
+	<div th:replace="form_errors :: formErrorsFragment"></div>
+	<div class="mb-3">
+		<label for="userName" class="form-label">사용자ID</label>
+		<input type="text" th:field="*{userName}" class="form-control"/>
+	</div>
+
+
+</form>
+
+
+
+
+
+</div>
+
+</html>

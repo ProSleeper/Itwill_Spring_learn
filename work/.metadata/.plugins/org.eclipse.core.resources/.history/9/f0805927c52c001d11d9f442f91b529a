@@ -1,0 +1,36 @@
+package com.exe.board.user;
+
+public class UserRole {
+
+}
+public enum Fruit{
+	
+	APPLE, PEACH, BANANA;
+
+
+}
+
+
+/**
+ * enum은 열거형 자료형(enumerated type)
+ * 열거형은 서로 연관된 상수들의 집합을 class로 만든 것
+
+	public enum Fruit{
+	
+		APPLE, PEACH, BANANA;
+	
+	
+	}
+
+ * 
+ */
+
+
+
+
+
+
+
+
+
+

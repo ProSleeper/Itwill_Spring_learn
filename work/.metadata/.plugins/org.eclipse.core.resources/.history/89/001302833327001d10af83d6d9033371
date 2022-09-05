@@ -1,5 +1,0 @@
-package com.exe.springJdbcTemplate;
-
-public interface temp {
-
-}

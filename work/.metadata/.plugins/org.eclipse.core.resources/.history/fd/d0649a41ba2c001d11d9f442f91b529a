@@ -1,0 +1,33 @@
+package com.exe.board.user;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.exe.board.security.SecurityConfig;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class UserService {
+	private final UserRepository userRepository;
+	private final PasswordEncoder passwordEncoder;
+	
+	public SiteUser create(String userName, String email, String password) {
+		SiteUser user = new SiteUser();
+		user.setUserName(userName);
+		user.setEmail(email);
+		user.setPassword(password);
+		
+		//비밀번호는 암호화 해서 저장
+		//BCrypt 해싱 함수를 사용해서 암호화
+		//BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		user.setPassword(passwordEncoder.(password));
+		userRepository.save(user);
+		
+		
+		
+		return user;
+	}
+	
+}

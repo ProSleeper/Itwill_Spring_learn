@@ -1,0 +1,13 @@
+
+<html layout:decorate="~{layout}">
+<meta charset="UTF-8">
+
+<div layout:fragment="content" class="container my-3">
+	<div class="my-3 border-bottom"></div>
+
+
+
+</div>
+
+
+</html>

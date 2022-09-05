@@ -1,7 +1,0 @@
-package com.exe.spingmybatis;
-
-public interface Service {
-	
-	String getMessage();
-
-}

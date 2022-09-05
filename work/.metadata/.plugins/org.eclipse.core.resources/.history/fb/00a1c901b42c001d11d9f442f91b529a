@@ -1,0 +1,16 @@
+package com.exe.board.user;
+
+import org.springframework.stereotype.Service;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class UserService {
+	private final UserRepository userRepository;
+	
+	public SiteUser create(String userName, String email, String password)
+	
+	
+	
+}

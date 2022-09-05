@@ -1,0 +1,45 @@
+package com.exe.board.user;
+
+import java.util.Optional;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.exe.board.DataNotFoundException;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class UserService {
+	private final UserRepository userRepository;
+	private final PasswordEncoder passwordEncoder;	//얘는 어떻게 di되는지 질문
+	
+	public SiteUser create(String userName, String email, String password) {
+		SiteUser user = new SiteUser();
+		user.setUserName(userName);
+		user.setEmail(email);
+		user.setPassword(password);
+		
+		//비밀번호는 암호화 해서 저장
+		//BCrypt 해싱 함수를 사용해서 암호화
+		//BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		user.setPassword(passwordEncoder.encode(password));
+		userRepository.save(user);
+		
+		return user;
+	}
+	
+	public SiteUser getUser(String userName) {
+		Optional<SiteUser> siteUser = userRepository.findByUserName(userName);
+		
+		if (siteUser.isPresent()) {
+			return siteUser.get();
+		}
+		else {
+			throw new DataNotFoundException("사용자가 없습니다.");
+		}
+		
+	}
+	
+}
