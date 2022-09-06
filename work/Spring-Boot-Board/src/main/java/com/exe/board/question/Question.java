@@ -2,16 +2,9 @@ package com.exe.board.question;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Set;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 import com.exe.board.answer.Answer;
 import com.exe.board.user.SiteUser;
@@ -43,6 +36,9 @@ public class Question {
 	private SiteUser author;
 	
 	private LocalDateTime modifyDate;
+
+	@ManyToMany
+	Set<SiteUser> voter;
 }
 
 

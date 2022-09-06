@@ -12,11 +12,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.exe.board.answer.AnswerForm;
@@ -125,28 +121,50 @@ public class QuestionController {
 		questionService.modify(question, questionForm.getSubject(), questionForm.getContent());
 		
 		return String.format("redirect:/question/detail/%s", id);
-		
-		
-		
 	}
-	
-	
-	@RequestMapping("/listsize")
+
+
+	@PreAuthorize("isAuthenticated()")
+	@GetMapping("/delete/{id}")
+	public String questionDelete(Principal principal, @PathVariable("id") Integer id) {
+
+		Question question = questionService.getQuestion(id);
+
+		if(!question.getAuthor().getUserName().equals(principal.getName())) {
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "삭제 권한이 없습니다.");
+		}
+
+		questionService.delete(question);
+		return "redirect:/";
+	}
+
+	@PreAuthorize("isAuthenticated()")
+	@GetMapping("/vote/{id}")
+	public String questionVote(Principal principal, @PathVariable("id") Integer id) {
+		System.out.print("오나?");
+		Question question = questionService.getQuestion(id);
+
+		SiteUser siteUser = userService.getUser(principal.getName());
+
+		questionService.vote(question, siteUser);
+
+		return String.format("redirect:/question/detail/%s", id);
+	}
+
+	@PreAuthorize("isAuthenticated()")
+	@RequestMapping("/vote/test")
 	@ResponseBody
-	public String listsize(Model model, @PageableDefault Pageable pageable) {
-		System.out.println("여기 오니?");
-		Page<Question> paging = questionService.getList(pageable);
-		
-		model.addAttribute("lists", paging);
-		model.addAttribute("paging", paging);
-		
-		System.out.println("요청");
-		
-		return String.valueOf("현재 배열의 사이즈는" + paging.getSize());
+	public String testqQestion() {
+
+		return "testQuestion";
 	}
-	
-	
-	
+
+	@RequestMapping("/vote/test2")
+	public String testqQestionWow() {
+
+		return "testHtml";
+	}
+
 	
 //	컨트롤러가 리포지토리를 직접 접근할때의 방법
 //	private final QuestionRepository questionRepository;
