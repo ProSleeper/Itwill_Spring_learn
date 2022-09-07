@@ -1,9 +1,0 @@
-package com.exe.springwebview;
-
-import org.springframework.web.servlet.view.AbstractView;
-
-public class SimpleCutomView extends AbstractViewract{
-
-	
-	
-}

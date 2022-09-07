@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="demo/src/main/java"/>
+	<classpathentry kind="src" path="demo/src/test/java"/>
+	<classpathentry kind="lib" path="demo/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ITWILL/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.7.3/4c96169e8d71c9c41f07a40d011dbd41898180ac/spring-boot-autoconfigure-2.7.3.jar" sourcepath="C:/Users/ITWILL/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.7.3/8433951e5af85fee6c6c3b2d7f486446bdafda21/spring-boot-autoconfigure-2.7.3-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/ITWILL/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.7.3/3a8d641077565b7eaec3b2f91d5b83a6800f5895/spring-boot-2.7.3.jar" sourcepath="C:/Users/ITWILL/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.7.3/a5fd253003eeb65620223ac0ad5f30157773d622/spring-boot-2.7.3-sources.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

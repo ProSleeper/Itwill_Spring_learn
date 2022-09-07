@@ -1,7 +1,0 @@
-package com.exe.springwebview;
-
-import org.springframework.web.servlet.view.document.AbstractPdfView;
-
-public class CustomPdfView extends AbstractPdfView{
-
-}
