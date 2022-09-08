@@ -33,10 +33,6 @@
 		<beans:property name="configLocation" value="classpath:mybatis-config.xml"></beans:property>
 	</beans:bean>
 	
-	
-	
-	
-
 
 	<beans:bean id="dataSource"
 		class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">

@@ -289,7 +289,8 @@ public class BoardController {
 
 		return "redirect:/list.action?" + param;
 	}
-
+	
+	
 }
 
 
