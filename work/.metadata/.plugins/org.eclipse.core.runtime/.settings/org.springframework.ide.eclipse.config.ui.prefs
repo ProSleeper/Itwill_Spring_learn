@@ -1,3 +1,4 @@
+//com.springsource.config.ui.prefs.activePageIndex\:/SpringAOP/src/main/resources/META-INF/spring/app-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringAOP/src/test/java/app-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringAOP/src/test/resources/com/exe/aop/ExampleConfigurationTests-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
 //com.springsource.config.ui.prefs.activePageIndex\:/SpringDI/src/main/java/app-context.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>

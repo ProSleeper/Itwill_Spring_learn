@@ -8,13 +8,14 @@
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="td"/>
+		<item key="selection" value="package com.exe.aop;"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="package com.exe.aop;"/>
 			<item value="dd"/>
 			<item value="qu"/>
 			<item value="&#x0D;&#x0A;&lt;html layout:decorate=&quot;~{layout}&quot;&gt;&#x0D;&#x0A;&lt;meta charset=&quot;UTF-8&quot;&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&lt;div layout:fragment=&quot;content&quot; class=&quot;container my-3&quot;&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 질문 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;h2 class=&quot;border-bottom py-2&quot; th:text=&quot;${question.subject}&quot;&gt;&lt;/h2&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;div class=&quot;card my-3&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;div class=&quot;card-body&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;div class=&quot;card-text&quot; style=&quot;white-space: pre-line;&quot;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;th:text=&quot;${question.content}&quot;&gt;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;div class=&quot;d-flex justify-content-end&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;div class=&quot;badge bg-light text-dark p-2 text-start&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;div&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;th:text=&quot;${#temporals.format(question.createdDate, &apos;yyyy-MM-dd, HH:mm&apos;)}&quot;&gt;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 질문 끝--&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- &lt;h1 th:text=&quot;${question.subject}&quot;&gt;제목&lt;/h1&gt;&#x0D;&#x0A;&lt;div th:text=&quot;${question.content}&quot;&gt;내용&lt;/div&gt;&#x0D;&#x0A;&lt;div th:text=&quot;${question.createdDate}&quot;&gt;날짜&lt;/div&gt;&#x0D;&#x0A; --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 답변 갯수 표시 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;h5 class=&quot;border-bottom my-3 py-2&quot;&#x0D;&#x0A;&#x09;&#x09;&#x09;th:text=&quot;|${#lists.size(question.answerList)}개의 답변이 있습니다.|&quot;&gt;&lt;/h5&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 답변 반복 --&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;div class=&quot;card my-3&quot; th:each=&quot;answer : ${question.answerList}&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;div class=&quot;card-body&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;div class=&quot;card-text&quot; style=&quot;white-space: pre-line;&quot;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;th:text=&quot;${answer.content}&quot;&gt;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;div class=&quot;d-flex justify-content-end&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;div class=&quot;badge bg-light text-dark p-2 text-start&quot;&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;div th:text=&quot;${#temporals.format(answer.createdDate, &apos;yyyy-MM-dd, HH:mm&apos;)}&quot;&gt;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x09;&#x09;&lt;!-- 답변 반복 끝 --&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;form th:action=&quot;@{|/answer/create/${question.id}|}&quot; method=&quot;post&quot; class=&quot;my-3&quot;&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;textarea rows=&quot;10&quot; class=&quot;form-control&quot; name=&quot;content&quot; id=&quot;content&quot;&gt;&lt;/textarea&gt;&#x0D;&#x0A;&#x09;&#x09;&#x09;&lt;input type=&quot;submit&quot; value=&quot;답변 등록&quot; class=&quot;btn btn-primary my-2&quot; /&gt;&#x0D;&#x0A;&#x0D;&#x0A;&#x09;&#x09;&lt;/form&gt;&#x0D;&#x0A;&#x09;&lt;/div&gt;&#x0D;&#x0A;&#x0D;&#x0A;&lt;/html&gt;"/>
@@ -22,9 +23,6 @@
 			<item value="&lt;%@ taglib uri=&quot;http://java.sun.com/jsp/jstl/core&quot; prefix=&quot;c&quot; %&gt;"/>
 			<item value="$"/>
 			<item value="springweb"/>
-			<item value="dao"/>
-			<item value="srping"/>
-			<item value="sping"/>
 		</list>
 		<list key="replacehistory">
 			<item value="td"/>

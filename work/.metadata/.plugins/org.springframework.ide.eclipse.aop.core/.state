@@ -11,6 +11,6 @@
 <aop-project name="demo"/>
 <aop-project name="SpringJdbcTemplate"/>
 <aop-project name="SpringWebView"/>
-<aop-project name="Spring-Boot-Board"/>
 <aop-project name="SpringBootBoard"/>
+<aop-project name="SpringDI2"/>
 </aop-reference-model>
